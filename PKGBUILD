@@ -23,7 +23,7 @@ arch=(x86_64)
 url='https://repo.radeon.com/amdgpu'
 license=(custom: multiple)
 makedepends=(wget)
-source=(amdgpu-pro-${major}-${minor}-ubuntu-${ubuntu_ver}.tar.xz)
+source=(https://github.com/blacksky3/OPENCL-AMDGPU-PRO-21.20/releases/download/21.20/amdgpu-pro-${major}-${minor}-ubuntu-${ubuntu_ver}.tar.xz)
 
 # extracts a debian package
 # $1: deb file to extract
