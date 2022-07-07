@@ -63,7 +63,7 @@ move_copyright(){
 package_opencl-amdgpu-pro-21.20(){
   pkgdesc='Non-free AMD OpenCL ICD Loaders. Version 21.20 (32-bit)'
   license=(custom: AMDGPU-PRO EULA)
-  conflicts=(opencl-amd)
+  conflicts=(opencl-amd opencl-amdgpu-pro)
   provides=(opencl-driver)
   optdepends=(clinfo rocm-opencl-runtime)
 
@@ -81,7 +81,7 @@ package_lib32-opencl-amdgpu-pro-21.20(){
   pkgdesc='Non-free AMD OpenCL ICD Loaders. Version 21.20 (32-bit)'
   license=(custom: AMDGPU-PRO EULA)
   depends=(opencl-amdgpu-pro-21.20=${major}_${minor}-${pkgrel})
-  conflicts=(opencl-amd)
+  conflicts=(opencl-amd ib32-opencl-amdgpu-pro)
   provides=(lib32-opencl-driver)
 
   extract_deb "${srcdir}"/amdgpu-pro-${major}-${minor}-ubuntu-${ubuntu_ver}/opencl-orca-amdgpu-pro-icd_${major}-${minor}_i386.deb
